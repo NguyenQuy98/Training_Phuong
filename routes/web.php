@@ -11,8 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/main','MainController@main');
+Route::get('/','Guest\MainController@main');
