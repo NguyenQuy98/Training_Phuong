@@ -11,4 +11,8 @@ class MainController extends Controller
     {
         return view('guest.home');
     }
+    public function contact()
+    {
+        return view('guest.contact');
+    }
 }
