@@ -16,7 +16,7 @@
 
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="zoomIn">
                         <!-- Button -->
-                        <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
                             Shop Now
                         </a>
                     </div>
@@ -35,7 +35,7 @@
 
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="slideInUp">
                         <!-- Button -->
-                        <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
                             Shop Now
                         </a>
                     </div>
@@ -54,7 +54,7 @@
 
                     <div class="wrap-btn-slide1 w-size1 animated visible-false" data-appear="rotateIn">
                         <!-- Button -->
-                        <a href="product.html" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
+                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 bo-rad-23 s-text2 bgwhite hov1 trans-0-4">
                             Shop Now
                         </a>
                     </div>
@@ -182,7 +182,7 @@
                             <div class="block2-overlay trans-0-4">
                                 <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
                                     <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                    <i class="far fa-heart" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                 </a>
 
                                 <div class="block2-btn-addcart w-size1 trans-0-4">
@@ -215,7 +215,7 @@
                             <div class="block2-overlay trans-0-4">
                                 <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
                                     <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                    <i class="far fa-heart" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                 </a>
 
                                 <div class="block2-btn-addcart w-size1 trans-0-4">
@@ -248,7 +248,7 @@
                             <div class="block2-overlay trans-0-4">
                                 <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
                                     <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                    <i class="far fa-heart" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                 </a>
 
                                 <div class="block2-btn-addcart w-size1 trans-0-4">
@@ -281,7 +281,7 @@
                             <div class="block2-overlay trans-0-4">
                                 <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
                                     <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                    <i class="far fa-heart" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                 </a>
 
                                 <div class="block2-btn-addcart w-size1 trans-0-4">
@@ -318,7 +318,7 @@
                             <div class="block2-overlay trans-0-4">
                                 <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
                                     <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                    <i class="far fa-heart" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                 </a>
 
                                 <div class="block2-btn-addcart w-size1 trans-0-4">
@@ -351,7 +351,7 @@
                             <div class="block2-overlay trans-0-4">
                                 <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
                                     <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                    <i class="far fa-heart" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                 </a>
 
                                 <div class="block2-btn-addcart w-size1 trans-0-4">
@@ -384,7 +384,7 @@
                             <div class="block2-overlay trans-0-4">
                                 <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
                                     <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                    <i class="far fa-heart" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                 </a>
 
                                 <div class="block2-btn-addcart w-size1 trans-0-4">
@@ -417,7 +417,7 @@
                             <div class="block2-overlay trans-0-4">
                                 <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
                                     <i class="icon-wishlist icon_heart_alt" aria-hidden="true"></i>
-                                    <i class="far fa-heart" aria-hidden="true"></i>
+                                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                                 </a>
 
                                 <div class="block2-btn-addcart w-size1 trans-0-4">
@@ -642,7 +642,7 @@
 
             <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
                 <span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-                    <i class="far fa-heart" aria-hidden="true"></i>
+                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                     <span class="p-t-2">39</span>
                 </span>
 
@@ -664,7 +664,7 @@
 
             <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
                 <span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-                    <i class="far fa-heart" aria-hidden="true"></i>
+                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                     <span class="p-t-2">39</span>
                 </span>
 
@@ -686,7 +686,7 @@
 
             <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
                 <span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-                    <i class="far fa-heart" aria-hidden="true"></i>
+                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                     <span class="p-t-2">39</span>
                 </span>
 
@@ -708,7 +708,7 @@
 
             <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
                 <span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-                    <i class="far fa-heart" aria-hidden="true"></i>
+                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                     <span class="p-t-2">39</span>
                 </span>
 
@@ -730,7 +730,7 @@
 
             <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
                 <span class="block4-overlay-heart s-text9 flex-m trans-0-4 p-l-40 p-t-25">
-                    <i class="far fa-heart" aria-hidden="true"></i>
+                    <i class="icon-wishlist icon_heart dis-none" aria-hidden="true"></i>
                     <span class="p-t-2">39</span>
                 </span>
 

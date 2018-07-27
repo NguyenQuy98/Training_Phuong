@@ -1712,8 +1712,8 @@ li.sale-noti > a {
   color: white;
 }
 
-.block2-btn-addwishlist .icon-wishlist,
-.block2-btn-towishlist .icon-wishlist {
+.block2-btn-addwishlist .fa-heart,
+.block2-btn-towishlist .fa-heart {
   line-height: 0;
 }
 

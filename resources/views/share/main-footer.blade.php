@@ -12,11 +12,11 @@
 					</p>
 
 					<div class="flex-m p-t-30">
-						<a href="#" class="fs-18 color1 p-r-20 fas fa-facebook"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fas fa-instagram"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fas fa-pinterest-p"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fas fa-snapchat-ghost"></a>
-						<a href="#" class="fs-18 color1 p-r-20 fas fa-youtube-play"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fab fa-facebook"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fab fa-instagram"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fab fa-pinterest-p"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fab fa-snapchat-ghost"></a>
+						<a href="#" class="fs-18 color1 p-r-20 fab fa-youtube"></a>
 					</div>
 				</div>
 			</div>
