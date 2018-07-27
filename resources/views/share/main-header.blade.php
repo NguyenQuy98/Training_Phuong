@@ -21,15 +21,15 @@
 							</li>
  
 							<li>
-								<a href="cart.html">Features</a>
+								<a href="{{ route('guest.cart')}}">Features</a>
 							</li>
 
 							<li>
-								<a href="blog.html">Blog</a>
+								<a href="{{ route('guest.blog')}}">Blog</a>
 							</li>
 
 							<li>
-								<a href="about.html">About</a>
+								<a href="{{ route('guest.about')}}">About</a>
 							</li>
 
 							<li>
@@ -110,7 +110,7 @@
 							<div class="header-cart-buttons">
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
-									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+									<a href="{{ route('guest.cart')}}" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										View Cart
 									</a>
 								</div>
@@ -208,7 +208,7 @@
 							<div class="header-cart-buttons">
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
-									<a href="cart.html" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+									<a href="{{ route('guest.cart')}}" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										View Cart
 									</a>
 								</div>
@@ -277,19 +277,19 @@
 						<a href="{{ route('guest.product')}}">Shop</a>
 					</li>
 					<li class="item-menu-mobile">
-						<a href="cart.html">Features</a>
+						<a href="{{ route('guest.cart')}}">Features</a>
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="blog.html">Blog</a>
+						<a href="{{ route('guest.blog')}}">Blog</a>
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="about.html">About</a>
+						<a href="{{ route('guest.about')}}">About</a>
 					</li>
 
 					<li class="item-menu-mobile">
-						<a href="contact.html">Contact</a>
+						<a href="{{ route('guest.contact')}}">Contact</a>
 					</li>
 				</ul>
 			</nav>

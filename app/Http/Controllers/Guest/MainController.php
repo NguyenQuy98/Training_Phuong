@@ -23,4 +23,20 @@ class MainController extends Controller
     {
         return view('guest.product-detail');
     }
+    public function cart()
+    {
+        return view('guest.cart');
+    }
+    public function blog()
+    {
+        return view('guest.blog');
+    }
+    public function blog_detail()
+    {
+        return view('guest.blog-detail');
+    }
+    public function about()
+    {
+        return view('guest.about');
+    }
 }
