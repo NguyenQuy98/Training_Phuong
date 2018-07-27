@@ -14,3 +14,4 @@
 Route::get('/','Guest\MainController@main')->name('guest.home');
 Route::get('/contact',['as' => 'guest.contact','uses' => 'Guest\MainController@contact']);
 Route::get('/product','Guest\MainController@product')->name('guest.product');
+Route::get('/product_detail','Guest\MainController@product_detail')->name('guest.product_detail');
