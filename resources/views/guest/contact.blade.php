@@ -13,7 +13,7 @@
 		<div class="row">
 			<div class="col-md-6 p-b-30">
 				<div class="p-r-20 p-r-0-lg">
-					<div class="contact-map size21" id="google_map" data-map-x="40.614439" data-map-y="-73.926781" data-scrollwhell="0" data-draggable="1"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.719322975496!2d106.63806011977539!3d10.797534900000004!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1svi!2s!4v1532657657352" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+					<div class="contact-map size21" id="google_map" data-map-x="40.614439" data-map-y="-73.926781" data-scrollwhell="0" data-draggable="1"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15676.719322975496!2d106.63806011977539!3d10.797534900000004!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1svi!2s!4v1532657657352" width="550" height="503" frameborder="0" style="border:0" allowfullscreen></iframe></div>
 				</div>
 			</div>
 
