@@ -296,12 +296,12 @@
 
 						<ul class="bgwhite">
 							<li class="flex-w p-b-20">
-								<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
+								<a href="{{ route('guest.product_detail')}}" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
 									<img src="images/item-16.jpg" alt="IMG-PRODUCT">
 								</a>
 
 								<div class="w-size23 p-t-5">
-									<a href="product-detail.html" class="s-text20">
+									<a href="{{ route('guest.product_detail')}}" class="s-text20">
 										White Shirt With Pleat Detail Back
 									</a>
 
@@ -312,12 +312,12 @@
 							</li>
 
 							<li class="flex-w p-b-20">
-								<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
+								<a href="{{ route('guest.product_detail')}}" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
 									<img src="images/item-17.jpg" alt="IMG-PRODUCT">
 								</a>
 
 								<div class="w-size23 p-t-5">
-									<a href="product-detail.html" class="s-text20">
+									<a href="{{ route('guest.product_detail')}}" class="s-text20">
 										Converse All Star Hi Black Canvas
 									</a>
 
@@ -328,12 +328,12 @@
 							</li>
 
 							<li class="flex-w p-b-20">
-								<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
+								<a href="{{ route('guest.product_detail')}}" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
 									<img src="images/item-08.jpg" alt="IMG-PRODUCT">
 								</a>
 
 								<div class="w-size23 p-t-5">
-									<a href="product-detail.html" class="s-text20">
+									<a href="{{ route('guest.product_detail')}}" class="s-text20">
 										Nixon Porter Leather Watch In Tan
 									</a>
 
@@ -344,12 +344,12 @@
 							</li>
 
 							<li class="flex-w p-b-20">
-								<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
+								<a href="{{ route('guest.product_detail')}}" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
 									<img src="images/item-03.jpg" alt="IMG-PRODUCT">
 								</a>
 
 								<div class="w-size23 p-t-5">
-									<a href="product-detail.html" class="s-text20">
+									<a href="{{ route('guest.product_detail')}}" class="s-text20">
 										Denim jacket blue
 									</a>
 
@@ -360,12 +360,12 @@
 							</li>
 
 							<li class="flex-w p-b-20">
-								<a href="product-detail.html" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
+								<a href="{{ route('guest.product_detail')}}" class="dis-block wrap-pic-w w-size22 m-r-20 trans-0-4 hov4">
 									<img src="images/item-05.jpg" alt="IMG-PRODUCT">
 								</a>
 
 								<div class="w-size23 p-t-5">
-									<a href="product-detail.html" class="s-text20">
+									<a href="{{ route('guest.product_detail')}}" class="s-text20">
 										Nixon Porter Leather Watch In Tan
 									</a>
 

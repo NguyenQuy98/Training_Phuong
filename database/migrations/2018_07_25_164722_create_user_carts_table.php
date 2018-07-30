@@ -16,9 +16,11 @@ class CreateUserCartsTable extends Migration
         Schema::create('user_carts', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('product_id')->unsigned();
+            $table->integer('cart_id')->unsigned();
             $table->integer('quantity');
             $table->decimal('intoMoney');
             $table->foreign('product_id')->references('id')->on('products');
+            $table->foreign('cart_id')->references('id')->on('carts');
             $table->timestamps();
         });
     }

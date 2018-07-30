@@ -76,7 +76,7 @@
 
                     <div class="block1-wrapbtn w-size2">
                         <!-- Button -->
-                        <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
                             Dresses
                         </a>
                     </div>
@@ -88,7 +88,7 @@
 
                     <div class="block1-wrapbtn w-size2">
                         <!-- Button -->
-                        <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
                             Sunglasses
                         </a>
                     </div>
@@ -102,7 +102,7 @@
 
                     <div class="block1-wrapbtn w-size2">
                         <!-- Button -->
-                        <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
                             Watches
                         </a>
                     </div>
@@ -114,7 +114,7 @@
 
                     <div class="block1-wrapbtn w-size2">
                         <!-- Button -->
-                        <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
                             Footerwear
                         </a>
                     </div>
@@ -128,7 +128,7 @@
 
                     <div class="block1-wrapbtn w-size2">
                         <!-- Button -->
-                        <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
                             Bags
                         </a>
                     </div>
@@ -195,7 +195,7 @@
                         </div>
 
                         <div class="block2-txt p-t-20">
-                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                            <a href="{{ route('guest.product_detail')}}" class="block2-name dis-block s-text3 p-b-5">
                                 Herschel supply co 25l
                             </a>
 
@@ -228,7 +228,7 @@
                         </div>
 
                         <div class="block2-txt p-t-20">
-                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                            <a href="{{ route('guest.product_detail')}}" class="block2-name dis-block s-text3 p-b-5">
                                 Denim jacket blue
                             </a>
 
@@ -261,7 +261,7 @@
                         </div>
 
                         <div class="block2-txt p-t-20">
-                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                            <a href="{{ route('guest.product_detail')}}" class="block2-name dis-block s-text3 p-b-5">
                                 Coach slim easton black
                             </a>
 
@@ -294,7 +294,7 @@
                         </div>
 
                         <div class="block2-txt p-t-20">
-                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                            <a href="{{ route('guest.product_detail')}}" class="block2-name dis-block s-text3 p-b-5">
                                 Frayed denim shorts
                             </a>
 
@@ -331,7 +331,7 @@
                         </div>
 
                         <div class="block2-txt p-t-20">
-                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                            <a href="{{ route('guest.product_detail')}}" class="block2-name dis-block s-text3 p-b-5">
                                 Herschel supply co 25l
                             </a>
 
@@ -364,7 +364,7 @@
                         </div>
 
                         <div class="block2-txt p-t-20">
-                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                            <a href="{{ route('guest.product_detail')}}" class="block2-name dis-block s-text3 p-b-5">
                                 Denim jacket blue
                             </a>
 
@@ -397,7 +397,7 @@
                         </div>
 
                         <div class="block2-txt p-t-20">
-                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                            <a href="{{ route('guest.product_detail')}}" class="block2-name dis-block s-text3 p-b-5">
                                 Coach slim easton black
                             </a>
 
@@ -430,7 +430,7 @@
                         </div>
 
                         <div class="block2-txt p-t-20">
-                            <a href="product-detail.html" class="block2-name dis-block s-text3 p-b-5">
+                            <a href="{{ route('guest.product_detail')}}" class="block2-name dis-block s-text3 p-b-5">
                                 Frayed denim shorts
                             </a>
 
@@ -480,7 +480,7 @@
 
                     <div class="ab-t-l sizefull flex-col-c-b p-l-15 p-r-15 p-b-20">
                         <div class="t-center">
-                            <a href="product-detail.html" class="dis-block s-text3 p-b-5">
+                            <a href="{{ route('guest.product_detail')}}" class="dis-block s-text3 p-b-5">
                                 Gafas sol Hawkers one
                             </a>
 
