@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->integer('role')->default(0)->comment('O:user,1:admin');
+            $table->integer('flag')->default(0)->comment('O:không hoạt động,1:đang hoạt động');
             $table->rememberToken();
             $table->timestamps();
         });
