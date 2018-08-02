@@ -65,130 +65,99 @@
     </div>
 </section>
 
-<!-- Banner -->
 <section class="banner bgwhite p-t-40 p-b-40">
-    <div class="container">
-        <div class="sec-title p-b-60">
-            <h3 class="m-text5 t-center">
-                Featured Products
-            </h3>
-        </div>
-        <div class="row">
-            <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-                <!-- block1 -->
-                <div class="block1 hov-img-zoom pos-relative m-b-30">
-                    <img src="images/banner-02.jpg" alt="IMG-BENNER">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+					<!-- block1 -->
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-02.jpg" alt="IMG-BENNER">
 
-                    <div class="block1-wrapbtn w-size2">
-                        <!-- Button -->
-<<<<<<< HEAD
-                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                            Dresses
-=======
-                        <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                           More
->>>>>>> bbf23b479b718dd78107c233a568d219ce65597a
-                        </a>
-                    </div>
-                </div>
+						<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								Dresses
+							</a>
+						</div>
+					</div>
 
-                <!-- block1 -->
-                <div class="block1 hov-img-zoom pos-relative m-b-30">
-                    <img src="images/banner-05.jpg" alt="IMG-BENNER">
+					<!-- block1 -->
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-05.jpg" alt="IMG-BENNER">
 
-                    <div class="block1-wrapbtn w-size2">
-                        <!-- Button -->
-<<<<<<< HEAD
-                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                            Sunglasses
-=======
-                        <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                More
->>>>>>> bbf23b479b718dd78107c233a568d219ce65597a
-                        </a>
-                    </div>
-                </div>
-            </div>
+						<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								Sunglasses
+							</a>
+						</div>
+					</div>
+				</div>
 
-            <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-                <!-- block1 -->
-                <div class="block1 hov-img-zoom pos-relative m-b-30">
-                    <img src="images/banner-03.jpg" alt="IMG-BENNER">
+				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+					<!-- block1 -->
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-03.jpg" alt="IMG-BENNER">
 
-                    <div class="block1-wrapbtn w-size2">
-                        <!-- Button -->
-<<<<<<< HEAD
-                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                            Watches
-=======
-                        <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                More
->>>>>>> bbf23b479b718dd78107c233a568d219ce65597a
-                        </a>
-                    </div>
-                </div>
+						<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								Watches
+							</a>
+						</div>
+					</div>
 
-                <!-- block1 -->
-                <div class="block1 hov-img-zoom pos-relative m-b-30">
-                    <img src="images/banner-07.jpg" alt="IMG-BENNER">
+					<!-- block1 -->
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-07.jpg" alt="IMG-BENNER">
 
-                    <div class="block1-wrapbtn w-size2">
-                        <!-- Button -->
-<<<<<<< HEAD
-                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                            Footerwear
-=======
-                        <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                More
->>>>>>> bbf23b479b718dd78107c233a568d219ce65597a
-                        </a>
-                    </div>
-                </div>
-            </div>
+						<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								Footerwear
+							</a>
+						</div>
+					</div>
+				</div>
 
-            <div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
-                <!-- block1 -->
-                <div class="block1 hov-img-zoom pos-relative m-b-30">
-                    <img src="images/banner-04.jpg" alt="IMG-BENNER">
+				<div class="col-sm-10 col-md-8 col-lg-4 m-l-r-auto">
+					<!-- block1 -->
+					<div class="block1 hov-img-zoom pos-relative m-b-30">
+						<img src="images/banner-04.jpg" alt="IMG-BENNER">
 
-                    <div class="block1-wrapbtn w-size2">
-                        <!-- Button -->
-<<<<<<< HEAD
-                        <a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                            Bags
-=======
-                        <a href="#" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                                More
->>>>>>> bbf23b479b718dd78107c233a568d219ce65597a
-                        </a>
-                    </div>
-                </div>
+						<div class="block1-wrapbtn w-size2">
+							<!-- Button -->
+							<a href="{{ route('guest.product')}}" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
+								Bags
+							</a>
+						</div>
+					</div>
 
-                <!-- block2 -->
-                <div class="block2 wrap-pic-w pos-relative m-b-30">
-                    <img src="images/icons/bg-01.jpg" alt="IMG">
+					<!-- block2 -->
+					<div class="block2 wrap-pic-w pos-relative m-b-30">
+						<img src="images/icons/bg-01.jpg" alt="IMG">
 
-                    <div class="block2-content sizefull ab-t-l flex-col-c-m">
-                        <h4 class="m-text4 t-center w-size3 p-b-8">
-                            Sign up & get 20% off
-                        </h4>
+						<div class="block2-content sizefull ab-t-l flex-col-c-m">
+							<h4 class="m-text4 t-center w-size3 p-b-8">
+								Sign up & get 20% off
+							</h4>
 
-                        <p class="t-center w-size4">
-                            Be the frist to know about the latest fashion news and get exclu-sive offers
-                        </p>
+							<p class="t-center w-size4">
+								Be the frist to know about the latest fashion news and get exclu-sive offers
+							</p>
 
-                        <div class="w-size2 p-t-25">
-                            <!-- Button -->
-                            <a href="#" class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
-                                Sign Up
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+							<div class="w-size2 p-t-25">
+								<!-- Button -->
+								<a href="#" class="flex-c-m size2 bg4 bo-rad-23 hov1 m-text3 trans-0-4">
+									Sign Up
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 <!-- New Product -->
 <section class="newproduct bgwhite p-t-45 p-b-105">
@@ -585,13 +554,13 @@
             <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
                 <!-- Block3 -->
                 <div class="block3">
-                    <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+                    <a href="{{ route('guest.blog_detail')}}" class="block3-img dis-block hov-img-zoom">
                         <img src="images/blog-01.jpg" alt="IMG-BLOG">
                     </a>
 
                     <div class="block3-txt p-t-14">
                         <h4 class="p-b-7">
-                            <a href="blog-detail.html" class="m-text11">
+                            <a href="{{ route('guest.blog_detail')}}" class="m-text11">
                                 Black Friday Guide: Best Sales & Discount Codes
                             </a>
                         </h4>
@@ -609,13 +578,13 @@
             <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
                 <!-- Block3 -->
                 <div class="block3">
-                    <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+                    <a href="{{ route('guest.blog_detail')}}" class="block3-img dis-block hov-img-zoom">
                         <img src="images/blog-02.jpg" alt="IMG-BLOG">
                     </a>
 
                     <div class="block3-txt p-t-14">
                         <h4 class="p-b-7">
-                            <a href="blog-detail.html" class="m-text11">
+                            <a href="{{ route('guest.blog_detail')}}" class="m-text11">
                                 The White Sneakers Nearly Every Fashion Girls Own
                             </a>
                         </h4>
@@ -633,13 +602,13 @@
             <div class="col-sm-10 col-md-4 p-b-30 m-l-r-auto">
                 <!-- Block3 -->
                 <div class="block3">
-                    <a href="blog-detail.html" class="block3-img dis-block hov-img-zoom">
+                    <a href="{{ route('guest.blog_detail')}}" class="block3-img dis-block hov-img-zoom">
                         <img src="images/blog-03.jpg" alt="IMG-BLOG">
                     </a>
 
                     <div class="block3-txt p-t-14">
                         <h4 class="p-b-7">
-                            <a href="blog-detail.html" class="m-text11">
+                            <a href="{{ route('guest.blog_detail')}}" class="m-text11">
                                 New York SS 2018 Street Style: Annina Mislin
                             </a>
                         </h4>

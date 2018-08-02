@@ -8,7 +8,7 @@
 
 			<div>
 				<p class="s-text7 w-size27">
-					Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on (+1) 96 716 6879
+					TP.HCM(01647655111)
 				</p>
 
 				<div class="flex-m p-t-30">
@@ -113,7 +113,7 @@
 
 			<form>
 				<div class="effect1 w-size9">
-					<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="email@example.com">
+					<input class="s-text7 bg6 w-full p-b-5" type="text" name="email" placeholder="email@gmail.com">
 					<span class="effect1-line"></span>
 				</div>
 
