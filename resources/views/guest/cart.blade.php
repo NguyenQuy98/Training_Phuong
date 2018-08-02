@@ -128,7 +128,7 @@
 						</span>
 
 						<div class="rs2-select2 rs3-select2 rs4-select2 bo4 of-hidden w-size21 m-t-8 m-b-12">
-							<select class="selection-2" name="country">
+							<select class="selection-2 form-control" name="country" style="border: none">
 								<option>Select a country...</option>
 								<option>US</option>
 								<option>UK</option>

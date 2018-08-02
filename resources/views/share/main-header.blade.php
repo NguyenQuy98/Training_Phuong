@@ -17,11 +17,16 @@
 							</li>
 
 							<li>
-								<a href="{{ route('guest.product')}}">Shop</a>
+								<a href="">Categories</a>
+								<ul class="sub_menu">
+									<li><a href="">Men</a></li>
+									<li><a href="">Women</a></li>
+									<li><a href="">Kiss</a></li>
+								</ul>
 							</li>
- 
+
 							<li>
-								<a href="{{ route('guest.cart')}}">Features</a>
+								<a href="{{ route('guest.product')}}">Shop</a>
 							</li>
 
 							<li>
