@@ -83,6 +83,11 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 /*[ RESTYLE TAG ]
 ///////////////////////////////////////////////////////////
 */
+/* Standard syntax */
+@keyframes mymove {
+  from {transform: rotate(10deg)}
+  to {transform: rotate(-50deg)}
+}
 * {
 	margin: 0px; 
 	padding: 0px; 
@@ -94,8 +99,41 @@ body, html {
 	font-family: Montserrat-Regular, sans-serif;
   font-weight: 400;
 }
-
+.cart-font{
+  font-size: 1.5em;
+  color: #ff0000;
+  animation: mymove 0.3s linear infinite alternate;
+}
 /* ------------------------------------ */
+.login{
+  position: fixed;
+  /* left: 50%;
+  margin-left: -100px; */
+  /* z-index: 10000; */
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0,0,0,0.4);
+  /* margin: 5% auto 15% auto; */
+  display:none;
+  z-index: 1001;
+  
+}
+
+.active {
+  display: block;
+
+}
+.pad-top {
+  top: 450px;
+}
+.login h1{
+  margin-bottom: 35px;
+  color: #FF4081;
+  font-size: 2em;
+  font-family: 'Dancing Script', cursive;
+}
+
 a {
 	font-family: Montserrat-Regular;
   font-weight: 400;
@@ -187,7 +225,9 @@ iframe {
 }
 
 
-
+.body-overflow-y{
+  overflow-y: hidden;
+}
 
 
 /*[ LOADDING ]
@@ -525,7 +565,7 @@ iframe {
   top: 0;
   left: 0;
   position: fixed;
-  z-index: 1100;
+  z-index: 1000;
   box-shadow: 0 1px 5px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.2);
   -webkit-box-shadow: 0 1px 5px 0px rgba(0,0,0,0.2);
@@ -638,7 +678,7 @@ iframe {
 }
 
 .logo img {
-  max-height: 27px;
+  max-height: 40px;
 }
 
 

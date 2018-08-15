@@ -2275,7 +2275,10 @@
 -----------------------------------------------------------
 */
 .dis-none {display: none;}
-.dis-block {display: block;}
+.dis-block {display: block;
+	color: red;
+	
+}
 .dis-inline {display: inline;}
 .dis-inline-block {display: inline-block;}
 .dis-flex {

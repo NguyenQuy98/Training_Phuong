@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">    <!--===============================================================================================-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+	<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style-login.css') }}">   
+	<!--===============================================================================================-->
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
     <!--===============================================================================================-->
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('vendor/bootstrap/css/bootstrap.min.css') }}">
@@ -82,10 +86,45 @@
 				swal(nameProduct, "Thêm sản phẩm vào ưa thích !", "info");
 			});
 		});
+		$('document').ready(function(){
+    
+			var modal1 = document.getElementById('1');
+			var modal2 = document.getElementById('2');
+			var modal3 = document.getElementById('3');
+			var modal4 = document.getElementById('4');
+			
+			//When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal1 ) {
+					modal1.style.display = "none";
+				}
+				if (event.target == modal2) {
+					modal2.style.display = "none";
+				}
+				if (event.target == modal3 ) {
+					modal1.style.display = "none";
+					modal2.style.display = "block";
+				}
+				if (event.target == modal4) {
+					modal1.style.display = "block";
+					modal2.style.display = "none";
+				}
+			}
+		});
+		$('.header-wrapicon1').click(function(){
+			$('body').addClass('body-overflow-y');
+		});
+		$('.login').click(function(){
+			$('body').removeClass('body-overflow-y');
+		});
 	</script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
+  
+
+<script  src="js/index.js"></script>
 <!--===============================================================================================-->
-	<script src="js/main.js"></script>
+<script src="js/main.js"></script>
 
 
 </body>
