@@ -4,25 +4,25 @@
 
     /*[ Load page ]
     ===========================================================*/
-    $(".animsition").animsition({
-        inClass: 'fade-in',
-        outClass: 'fade-out',
-        inDuration: 1500,
-        outDuration: 800,
-        linkElement: '.animsition-link',
-        loading: true,
-        loadingParentElement: 'html',
-        loadingClass: 'animsition-loading-1',
-        loadingInner: '<div data-loader="ball-scale"></div>',
-        timeout: false,
-        timeoutCountdown: 5000,
-        onLoadEvent: true,
-        browser: [ 'animation-duration', '-webkit-animation-duration'],
-        overlay : false,
-        overlayClass : 'animsition-overlay-slide',
-        overlayParentElement : 'html',
-        transition: function(url){ window.location.href = url; }
-    });
+    // $(".animsition").animsition({
+    //     inClass: 'fade-in',
+    //     outClass: 'fade-out',
+    //     inDuration: 1500,
+    //     outDuration: 800,
+    //     linkElement: '.animsition-link',
+    //     loading: true,
+    //     loadingParentElement: 'html',
+    //     loadingClass: 'animsition-loading-1',
+    //     loadingInner: '<div data-loader="ball-scale"></div>',
+    //     timeout: false,
+    //     timeoutCountdown: 5000,
+    //     onLoadEvent: true,
+    //     browser: [ 'animation-duration', '-webkit-animation-duration'],
+    //     overlay : false,
+    //     overlayClass : 'animsition-overlay-slide',
+    //     overlayParentElement : 'html',
+    //     transition: function(url){ window.location.href = url; }
+    // });
     
     /*[ Back to top ]
     ===========================================================*/
@@ -175,13 +175,13 @@
 
     /*[ Show content Product detail ]
     ===========================================================*/
-    $('.active-dropdown-content .js-toggle-dropdown-content').toggleClass('show-dropdown-content');
-    $('.active-dropdown-content .dropdown-content').slideToggle('fast');
+    // $('.active-dropdown-content .js-toggle-dropdown-content').toggleClass('show-dropdown-content');
+    // $('.active-dropdown-content .dropdown-content').slideToggle('fast');
 
-    $('.js-toggle-dropdown-content').on('click', function(){
-        $(this).toggleClass('show-dropdown-content');
-        $(this).parent().find('.dropdown-content').slideToggle('fast');
-    });
+    // $('.js-toggle-dropdown-content').on('click', function(){
+    //     $(this).toggleClass('show-dropdown-content');
+    //     $(this).parent().find('.dropdown-content').slideToggle('fast');
+    // });
 
 
     /*[ Play video 01]
@@ -201,4 +201,4 @@
         $('.video-mo-01').css('opacity','0');
     });
 
-})(jQuery);
+});

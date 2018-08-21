@@ -14,8 +14,10 @@
 Route::get('/','Guest\MainController@main')->name('guest.home');
 Route::get('/contact',['as' => 'guest.contact','uses' => 'Guest\MainController@contact']);
 Route::get('/product','Guest\MainController@product')->name('guest.product');
-Route::get('/product-detail','Guest\MainController@product_detail')->name('guest.product_detail');
+
+Route::get('/product_detail/{id}','Guest\MainController@product_detail')->name('guest.product_detail');
+// Route::get('/Category/{category}','Guest\MainController@category')->name('guest.category');
 Route::get('/cart','Guest\MainController@cart')->name('guest.cart');
 Route::get('/blog','Guest\MainController@blog')->name('guest.blog');
-Route::get('/blog-detail','Guest\MainController@blog_detail')->name('guest.blog_detail');
+Route::get('blog/blog-detail','Guest\MainController@blog_detail')->name('guest.blog_detail');
 Route::get('/about','Guest\MainController@about')->name('guest.about');

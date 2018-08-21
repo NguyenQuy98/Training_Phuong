@@ -32,7 +32,7 @@
 			<form class="Dangnhap form-footer">
 			<div class="hand"></div>
 			<div class="hand rgt"></div>
-			<h1>Đăng nhập</h1>
+			<h1 class="font-text">Đăng nhập</h1>
 			<div class="form-group">
 				<input required="required" class="form-control"/>
 				<label class="form-label">Username    </label>
@@ -75,7 +75,7 @@
 			<form class="DangKy form-footer">
 			<div class="hand"></div>
 			<div class="hand rgt"></div>
-			<h1>Đăng ký</h1>
+			<h1 class="font-text">Đăng ký</h1>
 				<div class="form-group">
 				<input required="required" class="form-control"/>
 				<label class="form-label">Username    </label>
@@ -109,10 +109,15 @@
 
 							<li>
 								<a href="">Categories</a>
+								
 								<ul class="sub_menu">
-									<li><a href="">Men</a></li>
-									<li><a href="">Women</a></li>
-									<li><a href="">Kiss</a></li>
+									@foreach($categories as $category)
+									<li>
+										<a href="#">
+										{{$category->name}}
+										</a>
+									</li>@endforeach
+									
 								</ul>
 							</li>
 

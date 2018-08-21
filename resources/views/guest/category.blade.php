@@ -119,7 +119,7 @@
 					
 					<!-- Product -->
 					<div class="row">
-					@foreach($linkProduct as $product)
+					@foreach($produc_category as $product)
 						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<!-- Block2 -->
 							<div class="block2">
@@ -154,13 +154,15 @@
 						</div>
 
 					@endforeach
-					<!-- Pagination -->
 					{{$linkProduct->links()}}
 						
 					</div>
 					
-					
-					
+					<!-- Pagination -->
+					<div class="pagination flex-m flex-w p-t-26">
+						<a href="#" class="item-pagination flex-c-m trans-0-4 active-pagination">1</a>
+						<a href="#" class="item-pagination flex-c-m trans-0-4">2</a>
+					</div>
 				</div>
 			</div>
 		</div>

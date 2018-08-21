@@ -21,10 +21,11 @@
   
   body {
     background: #cc3367;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
   }
-  
+  .font-text{
+    text-align: center;
+  }
   .panda {
     position: relative;
     width: 200px;
