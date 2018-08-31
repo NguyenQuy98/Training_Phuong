@@ -4,41 +4,42 @@
 <div id="content">
 	<div id="content-header">
 		<div id="breadcrumb"> <a href="{{route('admin.index')}}" title="Go to Home" class="tip-bottom current"><i class="icon-home"></i> Home</a></div>
-		<h1>Manage Products</h1>
+		<h1>Manage User Account</h1>
 	</div>
 	<div class="container-fluid">
 		<hr>
 		<div class="row-fluid">
 			<div class="span12">
 				<div class="widget-box">
-					<div class="widget-title">
-						<span class="icon"><a href="{{route('admin.getProduct')}}"> <i class="fas fa-plus"></i> </a></span>
-						<h5>Products</h5>
-					</div>
+					
 					<div class="widget-content nopadding">
 						<table class="table table-bordered table-striped">
 							<thead>
 								<tr>
-									<th>Image</th>
-									<th>Name</th>
-									<!-- <th>Type</th> -->
-									<th>Manufactures</th>
-									<th>Price (VND)</th>
+                                    <th>Name</th>
+									<th>Email</th>
+									<th>Password</th>
+									<th>Flag</th>
 									<th>Action</th>
 								</tr>
 							</thead>
 							<tbody>
-								@foreach ($products as  $product) 
+								@foreach ($users as  $item) 
 								<tr class="">
-									<td><img src="{{asset('images/'.$product->main_image)}} " alt="sp" class="img-responsive"/></td>
-									<td>{{$product->name}}</td>
-									<!-- <td>category_name></td> -->
-									<td>{{$product->description}}</td>
-									<td>{{$product->price}}</td>
+
+									<td>{{$item->name}}</td>
+									<td>{{$item->email}}</td>
+									<td>{{$item->password}}</td>
+                                    
+									@if($item->flag == 0)
+										<td>Hoạt động</td>
+									@else
+										<td>Hết hoạt động</td>
+									@endif
 									<td>
 									@csrf
-										<a href="{{route('admin.getEditProduct',['id' => $product->id ])}}" class="btn btn-success btn-mini">Edit</a>
-										<a href="{{route('admin.delete',['id' => $product->id ])}}" onclick="return confirm('Are you sure to delete it?')" class="btn btn-danger btn-mini">Delete</a>
+										<!-- <a href="#" class="btn btn-success btn-mini">Edit</a> -->
+										<a href="{{route('admin.delete_user',['id' => $item->id ])}}" onclick="return confirm('Are you sure to delete it?')" class="btn btn-danger btn-mini">Delete</a>
 										
 									</td>
 								</tr>
@@ -47,7 +48,6 @@
 						</table>
 
 					</div>
-					{{$products->links()}}
 				</div>
 			</div>
 		</div>

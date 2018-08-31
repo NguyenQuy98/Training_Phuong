@@ -45,7 +45,9 @@ class MainController extends Controller
 
         $category = Category::where('slug',$slug)->firstOrFail();
 
-        $products = $category->product_category;
+        $products = Product::where('category_id',$category->id)->paginate(6);
+        
+        
         return view('guest.product',['products'=>$products,
         'categories'   =>$HomeModel->getCategory(),
         ]);
@@ -62,14 +64,24 @@ class MainController extends Controller
         ]);
     }
     
-    public function cart()
-    {
-        $HomeModel = new HomeModel();
-        return view('guest.cart'
-        ,[
-            'categories'   =>$HomeModel->getCategory()
-        ]);
-    }
+    // public function cart()
+    // {  
+    //     $HomeModel = new HomeModel();
+    //     return view('guest.cart'
+    //     ,[
+    //         'categories'   =>$HomeModel->getCategory()
+    //     ]);
+    // }
+    // <a href="{{ route('guest.cart_order',['id'=> {{ Auth::user()->id }} ])}}">
+    // public function cart_order($id)
+    // {
+    //     $cart_order = Product::find($id);
+        
+    //     $HomeModel = new HomeModel();
+    //     return view('guest.cart',['cart_order'=>$cart_order,
+    //         'categories'   =>$HomeModel->getCategory()
+    //     ]);
+    // }
     public function blog()
     {
         $product = Product::where('is_featured',1)->get();
@@ -116,58 +128,44 @@ class MainController extends Controller
         ]
     );
     }
-    public function postLogin(Request $req)
-    {
-        $this->validate($req,[
-            'email' =>'required|email',
-            'password'  =>'required|alphaNum|min:6'//nho nhat la 6 ky tu
-        ],[]);
-        // $login =
-    
-        $username = $req->get('email');
-        $password = $req->get('password');
 
-        $user = User::findUser($username);
-        if ($user != null)
-        {
-            if ($user->Type == User::TYPE_USER)
-            {
-                if (Hash::check($password, $user->Password))
-                {
-                    return redirect('/');
-                }
-                else return redirect()->back()->withErrors(['login' => "tài khoan hoac mat khau khong ton tai"])->withInput();
-            }
-            else return redirect()->back()->withErrors(['login' => "sai tài khoan hoac mat khau"])->withInput();
-        }
-        else return redirect()->back()->withErrors(['login' => "sai tài khoan hoac mat khau"])->withInput();
     
-    }
+    // public function postLogin(Request $req)
+    // {
+    //     if($req->isMethod('post')){
+    //         $data = $req->input();
+    //         if(Auth::attempt(['email'=>$data['email'],'password'=>$data['password'],'admin'=>'1' ])){
+    //             echo"thanh cong";die;
+    //         }
+    //         echo"that bai";die;
+    //     }
+    //     return view('/');
+    // }
 
-    public function postRegister(Request $req)
-    {
-        $this->validate($req,
-            [
-                'email'=>'required|email|unique:uses,email',
-                'password' =>'required|min:6|max:20',
-                'name' => 'required'
+    // public function postRegister(Request $req)
+    // {
+    //     $this->validate($req,
+    //         [
+    //             'email'=>'required|email|unique:uses,email',
+    //             'password' =>'required|min:6|max:20',
+    //             'name' => 'required'
             
-            ],[
-                'email.emal' => 'Không đúng định dạng email',
-                'email.unique' =>' Email đã có người sử dụng',
-                'password.min' => 'Mat khau ít nhất 6 ký tự'
-            ]
-            );
-            $user = new User();
-            $user->name = $req->username;
-            $user->email = $req->emailDK;
-            $user->password = Hash::make($req->passwordDK);
-            return redirect()->back()->whith('DK','Đăng ký thành công');
-    }
+    //         ],[
+    //             'email.emal' => 'Không đúng định dạng email',
+    //             'email.unique' =>' Email đã có người sử dụng',
+    //             'password.min' => 'Mat khau ít nhất 6 ký tự'
+    //         ]
+    //         );
+    //         $user = new User();
+    //         $user->name = $req->username;
+    //         $user->email = $req->emailDK;
+    //         $user->password = Hash::make($req->passwordDK);
+    //         return redirect()->back()->whith('DK','Đăng ký thành công');
+    // }
     public function getSearch(Request $req)
     {
         $HomeModel = new HomeModel();
-        $product = Product::where('name','like','%'.$req->search.'%')->orWhere('price',$req->search)->get();
+        $product = Product::where('name','like','%'.$req->search.'%')->orWhere('price',$req->search)->paginate(6);
         return view('guest.product',['products'=>$product,
         'categories'   =>$HomeModel->getCategory()
         ]);
@@ -176,7 +174,7 @@ class MainController extends Controller
     {
         $product = Product::where('is_featured',1)->get();
         $HomeModel = new HomeModel();
-        $blog = Blog::where('name','like','%'.$req->search.'%')->orWhere('title','like','%'.$req->search.'%')->get();
+        $blog = Blog::where('name','like','%'.$req->search.'%')->orWhere('title','like','%'.$req->search.'%')->paginate(4);
         return view('guest.blog',['blogs'=>$blog,
         'categories'   =>$HomeModel->getCategory(),
         'product'      =>$product

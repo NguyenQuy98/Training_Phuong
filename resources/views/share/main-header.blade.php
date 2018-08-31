@@ -2,7 +2,7 @@
 <header class="header1">
 	<!-- Header desktop -->
 	<!-- login -->
-	<div id="1" class="login">
+	<!-- <div id="1" class="login">
 		<div class="panda">
 			<div class="ear"></div>
 			<div class="face">
@@ -18,25 +18,36 @@
 				<div class="mouth"></div>
 			</div>
 			<div class="body"> </div>
-			<form class="Dangnhap form-footer" action="{{route('guest.Login')}}" method="POST">
-			{{ csrf_field() }}
+			<form class="Dangnhap form-footer" aria-label="{{ __('Login') }}" action="{{route('login')}}" method="POST">
+			@csrf
 				<div class="hand"></div>
 				<div class="hand rgt"></div>
 				<h1 class="font-text">Đăng nhập</h1>
-				@if(Session::has('flag'))
-				<div class="alert-{{Session::get('flag')}}">{{Session::get('messgae')}}</div>
-				@endif
+
 				<div class="form-group">
-					<input name="email" required="required" class="form-control"/>
 					<label class="form-label">Email    </label>
+					<input id="email" type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" required autofocus>
+
+					@if ($errors->has('email'))
+						<span class="invalid-feedback" role="alert">
+							<strong>{{ $errors->first('email') }}</strong>
+						</span>
+					@endif
+					
 				</div>
 				<div class="form-group">
-					<input id="password" type="password" name="password" required="required" class="form-control"/>
+
 					<label class="form-label">Password</label>
+					<input id="password" type="password" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+					@if ($errors->has('password'))
+						<span class="invalid-feedback" role="alert">
+							<strong>{{ $errors->first('password') }}</strong>
+						</span>
+					@endif
 				</div>
 				<div class="toggle">
 					<div class="foot">
-						<div class="finger"><button type="submit" name="login" value="Login" class="btn-1">Đăng nhập </button></div>
+						<div class="finger"><button type="submit" name="login" class="btn-1">Đăng nhập </button></div>
 					</div>
 					<div class="foot rgt">
 						<div class="finger"><button id="3" class="btn-2">Đăng Ký </button></div>
@@ -44,9 +55,9 @@
 				</div>
 			</form>
 		</div>
-	</div>
+	</div> -->
 	<!-- đăng kỳ -->
-	<div id="2" class="login">
+	<!-- <div id="2" class="login">
 		<div class="panda">
 			<div class="ear"></div>
 			<div class="face">
@@ -65,12 +76,10 @@
 			<form action="{{route('guest.Register')}}" method="post" class="DangKy form-footer">
 				<div class="hand"></div>
 				<div class="hand rgt"></div>
-				<!--  -->
-				@if(Session::has('DK'))
-				<div class="alert alert-success">{{Session::get('DK')}}</div>
-				@endif
+				
+				
 				<h1 class="font-text">Đăng ký</h1>
-				<input type="hidden" name="_token" value="{{csrf_token()}}"/>>
+
 				<div class="form-group">
 					<input name="username" required="required" class="form-control"/>
 					<label class="form-label">Username    </label>
@@ -94,7 +103,8 @@
 				</div>
 			</form>
 		</div>
-	</div>
+	</div> -->
+	
 	<!--  -->
 	<div class="container-menu-header">
 		<div class="wrap_header">
@@ -141,10 +151,37 @@
 				<!-- <div id="01" class="header-wrapicon1 dis-block">
 					<img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON">
 					</div> -->
-				<button onclick="document.getElementById('1').style.display='block'" class="header-wrapicon1 dis-block btn-login">Đăng nhập </button>
+				<!-- <button onclick="document.getElementById('1').style.display='block'" class="header-wrapicon1 dis-block btn-login">Đăng nhập </button>
 				<span class="linedivide1"></span>
 				<button onclick="document.getElementById('2').style.display='block'" class="header-wrapicon1 dis-block btn-logup">Đăng ký </button>
-				<span class="linedivide1"></span>
+				<span class="linedivide1"></span> -->
+				
+				@guest
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                            </li>
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
 				<div class="header-wrapicon2">
 					<a href="{{ route('guest.cart')}}">
 					<i class="fas fa-cart-plus cart-font"></i>
@@ -157,7 +194,7 @@
 	<div class="wrap_header_mobile">
 		<!-- Logo moblie -->
 		<a href="{{ route('guest.home')}}" class="logo-mobile">
-		<img src="images/icons/logo.png" alt="IMG-LOGO">
+		<img src="{{asset('images/icons/logo.png')}}" alt="IMG-LOGO">
 		</a>
 		<!-- Button show menu -->
 		<div class="btn-show-menu">

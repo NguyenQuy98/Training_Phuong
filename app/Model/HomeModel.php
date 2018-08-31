@@ -42,8 +42,8 @@ class HomeModel extends Model
 
     public function getBlog()
     {
-        $product =DB::table('blogs')->get();
-        return $product;
+        $product =DB::table('blogs');
+        return $product->paginate(4);
     }
     public function searchBlog()
     {

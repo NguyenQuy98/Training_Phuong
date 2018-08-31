@@ -22,6 +22,46 @@
 			minimumResultsForSearch: 20,
 			dropdownParent: $('#dropDownSelect1')
 		});
+		$(document).ready(function (){
+			$('button[name="down"]').click(function() {
+				var rowid = $(this).attr('id');
+				$.ajax({
+					url: 'minus/'+rowid,
+					type: 'POST',
+					data: {_token: '{{csrf_token()}}'},
+					error: function(xhr, error){
+					console.debug(xhr); console.debug(error);
+					},
+					success: function(data) {
+						var string = data + "VND";
+				 		$('.total').html(string);
+					}
+				});
+				 var qty = $(this).parent().find('.num-product').val();
+				 $(this).parent().find('.num-product').val(parseInt(qty)-1);			
+			});
+			$('button[name="up"]').click(function() {
+				var rowid = $(this).attr('id');
+				$.ajax({
+					url: 'plus/'+rowid,
+					type: 'POST',
+					data: {_token: '{{csrf_token()}}'},
+					error: function(xhr, error){
+					console.debug(xhr); console.debug(error);
+					},
+					success: function(data) {
+						var string = data + "VND";
+				 		$('.total').html(string);
+					}
+				});
+				 var qty = $(this).parent().find('.num-product').val();
+				 $(this).parent().find('.num-product').val(parseInt(qty)+1);
+				
+				 
+				 			
+			});
+		});
+
 	</script>
 <!--===============================================================================================-->
 	<script type="text/javascript" src="{{ asset('vendor/slick/slick.min.js') }}"></script>
@@ -77,10 +117,13 @@
 		$('.login').click(function(){
 			$('body').removeClass('body-overflow-y');
 		});
+
 	</script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
-  
+	
+<script type="text/javascript">
+		
+</script>
 
 <script  src="{{asset('js/index.js')}}"></script>
 <!--===============================================================================================-->

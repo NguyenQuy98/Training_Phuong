@@ -8972,7 +8972,7 @@ wysihtml5.views.Textarea = wysihtml5.views.View.extend(
  * http://stackoverflow.com/questions/4361826/does-chrome-have-buil-in-speech-recognition-for-input-type-text-x-webkit-speec
  *
  * Current HTML5 draft can be found here
- * http://lists.w3.org/Archives/Public/public-xg-htmlspeech/2011Feb/att-0020/api-draft.html
+ * http://lists.w3.org/Archives/../public/public-xg-htmlspeech/2011Feb/att-0020/api-draft.html
  * 
  * "Accessing Google Speech API Chrome 11"
  * http://mikepultz.com/2011/03/accessing-google-speech-api-chrome-11/

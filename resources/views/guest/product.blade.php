@@ -1,7 +1,7 @@
 @extends('layout.main') 
 @section('content')
 <!-- Title Page -->
-<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(images/heading-pages-02.jpg);">
+<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url({{URL::asset('images/heading-pages-02.jpg')}})">
 	<h2 class="l-text2 t-center">
 		Women
 	</h2>
@@ -21,7 +21,7 @@
 					</h4>
 					<ul class="p-b-54">
 						<li class="p-t-4">
-							<a href="#" class="s-text13 active1">
+							<a href="{{ route('guest.product')}}" class="s-text13 active1">
 							All
 							</a>
 						</li>
@@ -81,9 +81,12 @@
 									</a>
 									<div class="block2-btn-addcart w-size1 trans-0-4">
 										<!-- Button -->
-										<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-										Add to Cart
-										</button>
+										<form action="{{ route('guest.Cart_User',['id' => $product->id])}}">
+											<button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
+												Add to Cart
+											</button>
+										</form>
+										
 									</div>
 								</div>
 							</div>
@@ -99,7 +102,9 @@
 					</div>
 					@endforeach
 					<!-- Pagination -->
+				
 				</div>
+				{{$products->links()}}
 			</div>
 		</div>
 	</div>

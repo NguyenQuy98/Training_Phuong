@@ -7,7 +7,7 @@ Version: 3.2 Timestamp: Mon Sep 10 10:38:04 PDT 2012
     /* inline-block for ie7 */
     zoom: 1;
     *display: inline;
-    vertical-align: top; width:90%;
+    vertical-align: top; width:30%;
 }
 .dataTables_length .select2-container{ width:auto!important;}
 .select2-container,
@@ -480,4 +480,7 @@ disabled look for already selected choices in the results dropdown
 	.select2-search input {
 		background-position: 100% -21px !important;
 	}
+}
+ul.pagination li{
+  float: left;
 }

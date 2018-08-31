@@ -7,8 +7,6 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 class User extends Authenticatable
 {
-    const TYPE_ADMIN = 0;
-	const TYPE_USER = 1;
     use Notifiable;
 
     /**
@@ -17,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','role','flag',
     ];
 
     /**
@@ -28,15 +26,8 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-    public function getAdmins()
-	{
-		$admin = User::where('Type',0)->get();
-		return $admin;
-	}
-
-	public function getUsers()
-	{
-		$user = User::where('Type',1)->get();
-		return $user;
-	}
+    public function product()
+    {
+        return $this->belongsToMany('App\Product');
+    }
 }
